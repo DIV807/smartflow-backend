@@ -13,7 +13,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/hooks/useAuth";
 import { authApi } from "@/utils/api";
-import { loginSchema, signupSchema, type LoginData, type SignupData } from "@shared/schema";
+import { loginSchema, signupSchema, type LoginData, type SignupData } from "./shared/schema";
 
 interface AuthFormProps {
   mode: "login" | "signup";
