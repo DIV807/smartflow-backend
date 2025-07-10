@@ -67,10 +67,10 @@ export default defineConfig(async () => {
     plugins,
     resolve: {
       alias: {
-        "@": path.resolve(__dirname, "src"),
-        "@shared": path.resolve(__dirname, "../shared"),         // ⬅️ adjusted to reach root
-        "@assets": path.resolve(__dirname, "../attached_assets") // ⬅️ adjusted to reach root
-      },
+  "@": path.resolve(__dirname, "src"),
+  "@shared": path.resolve(__dirname, "shared"), // Now inside client/
+  "@assets": path.resolve(__dirname, "../attached_assets"),
+},
     },
     build: {
       outDir: "dist",
