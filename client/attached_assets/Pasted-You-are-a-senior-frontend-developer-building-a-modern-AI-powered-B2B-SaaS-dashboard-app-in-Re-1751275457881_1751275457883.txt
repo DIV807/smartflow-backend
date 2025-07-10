@@ -1,0 +1,127 @@
+You are a senior frontend developer building a **modern, AI-powered B2B SaaS dashboard app** in **React + vite+  TypeScript**, styled with **Tailwind CSS**, and using **React Router v6** for page navigation. 
+
+The product is called **SmartFlow** – a tool for retail managers to monitor stock levels, predict shortages using AI, and plan eco-optimized delivery routes.
+
+You will build the **entire frontend of this platform**, including:
+
+---
+
+📁 File structure (React + vite + TypeScript project) 
+
+```
+src/
+├─ main.tsx
+├─ App.tsx
+├─ index.css
+├─ routes/                      # Pages / screens
+│  ├─ Home.tsx
+│  ├─ Login.tsx
+│  ├─ Signup.tsx
+│  └─ Dashboard.tsx             # Authenticated layout
+├─ components/                  # Reusable UI pieces
+│  ├─ NavBar.tsx
+│  ├─ HeroSection.tsx
+│  ├─ FeatureCard.tsx
+│  ├─ StatsStrip.tsx
+│  ├─ Footer.tsx
+│  ├─ AuthForm.tsx
+│  ├─ Sidebar.tsx
+│  ├─ DashboardCard.tsx
+│  ├─ InventoryTable.tsx
+│  ├─ DeliveryMap.tsx
+│  └─ EcoTracker.tsx
+├─ assets/                      # Logo, icons, etc.
+│  ├─ logo.svg
+│  ├─ dashboard-preview.png
+│  └─ bg-eco-illustration.svg
+├─ hooks/
+│  └─ useAuth.ts                # Auth state management (optional)
+├─ utils/
+│  └─ api.ts                    # Placeholder for backend calls
+```
+
+---
+
+🖥️ Pages & wireframes to create
+
+1. **Homepage** (`/`)
+   - Navigation bar with logo + links (Features, Pricing, Login, Get Started)
+   - Hero section with tagline: “Predict. Deliver. Save.”
+   - Dashboard preview image
+   - Feature section with 3 cards:
+     - Inventory forecasting
+     - Delivery route optimization
+     - Eco impact tracking
+   - Stats strip with KPIs like:
+     - 35% fewer stockouts
+     - 22% fuel saved
+     - 18% cost reduction
+   - CTA banner: “Start your free trial today”
+   - Footer with links and social icons
+
+2. **Login page** (`/login`)
+   - Centered card with AuthForm component
+   - Fields: email, password
+   - Button: Log In
+   - Link: Don’t have an account? Sign Up
+
+3. **Signup page** (`/signup`)
+   - Same AuthForm layout
+   - Fields: name, email, password, confirm password
+   - Button: Create Account
+   - Link: Already have an account? Log in
+
+4. **Dashboard page** (`/dashboard`)
+   - Sidebar navigation (Inventory, Deliveries, Insights, Settings)
+   - Top bar with profile icon, notifications
+   - Main content:
+     - InventoryTable component showing low stock alerts
+     - DeliveryMap showing live routes (simulated)
+     - DashboardCard stats (stockout % reduced, CO₂ saved)
+     - EcoTracker graph showing fuel saved over time
+   - Responsive layout: collapsible sidebar on mobile
+
+---
+
+🎨 UI/UX Guidelines
+
+- **Tech stack:** React + TypeScript + Tailwind CSS + React Router v6
+- **Color theme:**  
+  - Primary (Teal): `#14B8A6`  
+  - Dark Navy: `#0F172A`  
+  - Background: `#F9FAFB` (light), `#111827` (optional dark mode)  
+  - Accent: Amber for eco metrics (`#FACC15`)
+- **Font:** Poppins, fallback sans-serif
+- **Spacing:** Clean, airy, rounded elements with `rounded-xl` and `shadow-lg`
+- **Responsive:** All components must adjust gracefully from desktop to mobile
+- **Accessible:** Use semantic HTML, focus styles, ARIA labels where appropriate
+- **Extras:**
+  - Add subtle animations using `Framer Motion` (optional)
+  - Use icons from `Lucide-react` or `Heroicons`
+  - Lazy load larger images/components where needed
+
+---
+
+🧠 Auth & Navigation
+
+- Use `react-router-dom` for routing.
+- Use a global auth state (optional: context or simple localStorage) to protect `/dashboard`.
+- On login/signup success, redirect to `/dashboard`.
+- Use fake API functions from `utils/api.ts` for login/signup for now.
+
+---
+
+📦 What to generate
+
+Please generate:
+- The complete TypeScript code for each page and component listed
+- All necessary Tailwind CSS classes
+- File structure as above
+- Working React Router setup
+- Placeholder assets and data where needed (mocked data for dashboard)
+
+You don’t need to integrate a backend — assume fake data and static visualizations for now.
+
+Start building the frontend step-by-step. First create the homepage components, then the login/signup flows, then the dashboard with side navigation and stat components.
+
+Make everything beautiful, minimal, and functional. Let’s go!

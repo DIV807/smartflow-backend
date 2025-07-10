@@ -69,7 +69,7 @@ export default defineConfig(async () => {
       alias: {
   "@": path.resolve(__dirname, "src"),
   "@shared": path.resolve(__dirname, "shared"), // Now inside client/
-  "@assets": path.resolve(__dirname, "../attached_assets"),
+  "@assets": path.resolve(__dirname, "attached_assets"),
 },
     },
     build: {
