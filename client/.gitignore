@@ -1,0 +1,12 @@
+# Ignore all backend files
+main.py
+ml_models/
+server/
+outputs/
+python/
+requirements.txt
+
+# Ignore common files not needed in frontend repo
+__pycache__/
+.env
+node_modules/
